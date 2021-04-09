@@ -23,6 +23,8 @@ jobs:
       run: dotnet build
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Building exe
+      run: dotnet ./ConsoleApp2/bin/Debug/net5.0/ConsoleApp2.dll
     - name: Upload dotnet test results
       uses: actions/upload-artifact@v2
       with:
