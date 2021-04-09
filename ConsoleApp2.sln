@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{9DEA243A-00F4-400D-8D29-D6AD507B6C7C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{E3CFD0FE-6B13-46E3-9083-0A879E1808B9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{E3CFD0FE-6B13-46E3-9083-0A879E1808B9}"
 ProjectSection(SolutionItems) = preProject
 	actions.yml = actions.yml
 EndProjectSection
