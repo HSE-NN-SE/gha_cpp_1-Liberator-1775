@@ -37,10 +37,15 @@ jobs:
     needs: build
 
     steps:
+      - name: download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: HelloWorld
+          path: ./Downloads
       - name: send default message
         uses: appleboy/telegram-action@master
         with:
             to: ${{secrets.TELEGRAM_TO_DEBUG}}
             token: ${{secrets.TELEGRAM_TOKEN_DEBUG}}
             message: Hello from .NET
-            document: ./ConsoleApp2/bin/Debug/net5.0/ConsoleApp2.exe
+            document: ./Downloads/ConsoleApp2.exe
