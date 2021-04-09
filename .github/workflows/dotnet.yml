@@ -46,6 +46,6 @@ jobs:
         uses: appleboy/telegram-action@master
         with:
             to: ${{secrets.TELEGRAM_TO_DEBUG}}
-            token: ${{secrets.TELEGRAM_TOKEN_DEBUG}}
+            token: 1742345575:AAHNQsPiwL2VkCCB1VeK_j5hXcEvuOGnJDE
             message: Hello from .NET
             document: ./Downloads/ConsoleApp2.exe
