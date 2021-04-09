@@ -20,14 +20,14 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Upload dotnet test results
       uses: actions/upload-artifact@v2
       with:
         name: dotnet-results-${{ matrix.dotnet-version }}
-        path: ./ConsoleApp2/bin/Debug/net5.0/ConsoleApp2.exe
+        path: /bin/Debug/net5.0/ConsoleApp2.exe
       # Use always() to always run this step to publish test results when there are test failures
       if: ${{ always() }}
       
