@@ -27,7 +27,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: HelloWorld
-        path: ./ConsoleApp2/bin/Debug/net5.0/ConsoleApp2.exe
+        path: ./ConsoleApp2/bin/Debug/net5.0/
       # Use always() to always run this step to publish test results when there are test failures
       if: ${{ always() }}
   send-to-telegram:
