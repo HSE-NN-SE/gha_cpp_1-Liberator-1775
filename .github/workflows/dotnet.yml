@@ -55,4 +55,4 @@ jobs:
               to: 115985485
               token: 1742345575:AAHNQsPiwL2VkCCB1VeK_j5hXcEvuOGnJDE
               message: Hello from .NET.dll
-              document: ./Downloads/ConsoleApp2.exe
+              document: ./Downloads/ConsoleApp2.dll
