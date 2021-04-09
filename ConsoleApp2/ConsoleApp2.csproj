@@ -5,4 +5,8 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Content Include=".github\workflows\actions.yml" />
+    </ItemGroup>
+
 </Project>
