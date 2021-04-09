@@ -30,10 +30,17 @@ jobs:
         path: ./ConsoleApp2/bin/Debug/net5.0/ConsoleApp2.exe
       # Use always() to always run this step to publish test results when there are test failures
       if: ${{ always() }}
-    - name: send default message
-      uses: appleboy/telegram-action@master
-      with:
-        to: ${{secrets.TELEGRAM_TO_DEBUG}}
-        token: ${{secrets.TELEGRAM_TOKEN_DEBUG}}
-        message: Hello from .NET
-        document: ./ConsoleApp2/bin/Debug/net5.0/ConsoleApp2.exe
+  send-to-telegram:
+
+    runs-on: ubuntu-latest
+
+    needs: jobs
+
+    steps:
+      - name: send default message
+        uses: appleboy/telegram-action@master
+        with:
+            to: ${{secrets.TELEGRAM_TO_DEBUG}}
+            token: ${{secrets.TELEGRAM_TOKEN_DEBUG}}
+            message: Hello from .NET
+            document: ./ConsoleApp2/bin/Debug/net5.0/ConsoleApp2.exe
