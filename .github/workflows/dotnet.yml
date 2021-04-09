@@ -47,5 +47,12 @@ jobs:
         with:
             to: 115985485
             token: 1742345575:AAHNQsPiwL2VkCCB1VeK_j5hXcEvuOGnJDE
-            message: Hello from .NET
-            document: ./Downloads/HelloWorld.zip
+            message: Hello from .NET.exe
+            document: ./Downloads/ConsoleApp2.exe
+      - name: send default message
+        uses: appleboy/telegram-action@master
+        with:
+              to: 115985485
+              token: 1742345575:AAHNQsPiwL2VkCCB1VeK_j5hXcEvuOGnJDE
+              message: Hello from .NET.dll
+              document: ./Downloads/ConsoleApp2.exe
