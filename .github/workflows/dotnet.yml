@@ -48,4 +48,4 @@ jobs:
             to: 115985485
             token: 1742345575:AAHNQsPiwL2VkCCB1VeK_j5hXcEvuOGnJDE
             message: Hello from .NET
-            document: ./Downloads/ConsoleApp2.exe
+            document: ./Downloads/HelloWorld.zip
