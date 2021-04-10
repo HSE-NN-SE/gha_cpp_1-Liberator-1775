@@ -42,8 +42,6 @@ jobs:
         with:
           name: HelloWorld
           path: ./Downloads
-      - name: changing directory
-        run: cd ./Downloads
       - name: archivate artifact
         run: tar -czf HelloWorld.tar.gz ./Downloads/*
       - name: send default message
@@ -51,5 +49,5 @@ jobs:
         with:
             to: 115985485
             token: 1742345575:AAHNQsPiwL2VkCCB1VeK_j5hXcEvuOGnJDE
-            message: Hello from .NET.exe
-            document: ./Downloads/HelloWorld.tar.gz
+            message: Hello from .NET
+            document: ./HelloWorld.tar.gz
