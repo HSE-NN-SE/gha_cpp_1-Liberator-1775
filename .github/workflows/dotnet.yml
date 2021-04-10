@@ -43,7 +43,7 @@ jobs:
           name: HelloWorld
           path: ./Downloads
       - name: archivate artifact
-        run: tar -c HelloWorld.tar *
+        run: tar -c HelloWorld.tar ./Downloads/*
       - name: send default message
         uses: appleboy/telegram-action@master
         with:
